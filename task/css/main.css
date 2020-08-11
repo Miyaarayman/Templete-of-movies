@@ -1,0 +1,147 @@
+header {
+    padding: 15px 0;
+    height: 80px;
+}
+
+header .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .top-bar .logo{
+    font-size: 26px;
+}
+
+header .top-bar .mobile-btn {
+    display: none;
+}
+
+header .top-bar .mobile-btn svg {
+    font-size: 32px;
+    color: #fff;
+}
+
+.banner {
+    background-image: url('../img/73294597183847753345_thumb.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    height: calc(100vh - 80px);
+}
+
+.banner .welcome-msg {
+    position: absolute;
+    top: 57%;
+    left: 20%;
+    max-width: 36%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.banner .welcome-msg h1{
+     font-size: 2.5vw;
+}
+
+.banner .welcome-msg p {
+    font-size: 1vw;
+    margin-top: 8px;
+}
+
+.categories{
+   margin-top: 20px;
+}
+.searchiconColor{
+ background-color: #083B50;
+}
+
+.searchiconColor:hover{background-color: cadetblue}
+
+.Actionmovie{
+  margin-top: 25px;
+}
+
+.Actionmovie .p{
+  color: #000;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  padding: 10px;
+   width: 92.8%;
+ text-align: left;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer{
+   background-color: #0b3545;
+   height: 11vh;
+   margin-top: 15px;
+}
+.footer .foo h2{
+ font-size: 26px;
+ padding: 15px;
+ color: white;
+}
+
+@media(max-width:992px) {
+    header .top-bar {
+        justify-content: space-between;
+    }
+    header .top-bar nav {
+        display: none;
+    }
+    header .top-bar .mobile-btn {
+        display: block;
+    }
+}
+
+
+@media(max-width:822px){
+ header .top-bar .logo{
+  font-size: 20px;
+ }
+}
